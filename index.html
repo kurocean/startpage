@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="UTF-8">
+  <title>起始页</title>
+  <meta name="author" content="决云剑">
+  <link id="favicon" rel="icon" type="image/x-icon" href="./img/favicon.ico">
+  <link rel="stylesheet" href="css/main.css">
+  <script src="js\main.js"></script>
+</head>
+<body onload="onLoad()">
+<header>
+  <div id="firstline">
+    <span id="greeting"></span><span>！今天是</span><span id="weekday"></span>
+  </div>
+  <div id="time">
+    <div><span id="year"></span><span>年</span></div>
+    <div><span id="month"></span><span>月</span></div>
+    <div><span id="day"></span><span>日</span></div>
+    <div><span id="hour"></span><span>时</span></div>
+    <div><span id="minute"></span><span>分</span></div>
+    <div><span id="second"></span><span>秒</span></div>
+  </div>
+</header>
+<main>
+  <div class="search">
+    <form class="inputbox" target="iframeForm">
+      <input id="input" type="text"/>
+      <button hidden title="搜索" onclick="search()"></button>
+    </form>
+  </div>
+  <div id="searchiconline">
+    <img src="" id="icon1" onclick="iconMethod()">
+    <img src="" id="icon2" onclick="iconMethod()">
+    <img src="" id="icon3" onclick="iconMethod()">
+  </div>
+
+
+
+</main>
+<iframe id="iframeForm" name="iframeForm" style="display:none;"></iframe> 
+
+</body>
+
+
+</html>
+
