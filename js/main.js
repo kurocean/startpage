@@ -20,7 +20,7 @@ function onLoad()
     header();
     icon();
     document.getElementById("searchiconline").style.visibility="visible";
-    document.getElementById('input').focus();
+    getfocus();
 }
 
 function search()
@@ -96,6 +96,7 @@ function everysecond()
     document.getElementById('minute').innerHTML =mi;
     document.getElementById('second').innerHTML =s;
 }
+//TODO: flex的元素可以直接排序。此处可以按此优化。
 function icon()
 {
     if(searchEngine==="baidu")
@@ -127,3 +128,6 @@ function icon()
     }
 }
 
+function getfocus() {
+    document.getElementById("input").focus();
+  }

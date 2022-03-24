@@ -9,6 +9,7 @@ body
 }
 header *
 {
+    user-select:none;
 	text-align: center;
     font: 40px "Microsoft YaHei";
 	color:rgb(222, 222, 222);

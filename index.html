@@ -8,7 +8,8 @@
   <link rel="stylesheet" href="css/main.css">
   <script src="js\main.js"></script>
 </head>
-<body onload="onLoad()">
+<body onload="onLoad()" onclick="getfocus()">
+
 <header>
   <div id="firstline">
     <span id="greeting"></span><span>！今天是</span><span id="weekday"></span>
@@ -25,7 +26,7 @@
 <main>
   <div class="search">
     <form class="inputbox" target="iframeForm">
-      <input id="input" type="text"/>
+      <input id="input" type="text">
       <button hidden title="搜索" onclick="search()"></button>
     </form>
   </div>
@@ -34,14 +35,9 @@
     <img src="" id="icon2" onclick="iconMethod()">
     <img src="" id="icon3" onclick="iconMethod()">
   </div>
-
-
-
 </main>
 <iframe id="iframeForm" name="iframeForm" style="display:none;"></iframe> 
 
 </body>
-
-
 </html>
 
